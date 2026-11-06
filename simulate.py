@@ -38,7 +38,7 @@ def main():
 
     paket = joblib.load(KOK / "model.joblib")
     model = paket["model"]
-    model.n_jobs = 1  # tek resim icin daha hizli tahmin
+    model.n_jobs = 1 
 
     havuz = []
     for sinif in paket["classes"]:
